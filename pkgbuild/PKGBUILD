@@ -1,0 +1,15 @@
+pkgname=pymdown-lexers
+pkgver=0.1
+pkgrel=1
+pkgdesc='A package created to add additional lexers for use in Pygments.'
+arch=('any')
+url='https://github.com/vectorspacexyz/pymdown-lexers'
+license=('MIT')
+depends=('python' 'python-pygments')
+source=("${pkgname}.zip"::"https://github.com/vectorspacexyz/pymdown-lexers/archive/refs/heads/master.zip")
+sha256sums=('SKIP')
+
+package() {
+  cd "${pkgname}-master"
+  python setup.py install --root="$pkgdir" --optimize=1
+}

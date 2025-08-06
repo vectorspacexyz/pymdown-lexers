@@ -7,6 +7,7 @@ entry_points = '''
 criticmarkup=pymdown_lexers:CriticMarkupLexer
 hex=pymdown_lexers:HexLexer
 csscolor=pymdown_lexers:CSSColorLexer
+dart-critic=pymdown_lexers:DartCriticLexer
 '''
 
 setup(
