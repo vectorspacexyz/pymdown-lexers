@@ -22,6 +22,14 @@ hex          | A simple lexer to parse hex data in the form `address: 00 FF 00: 
 criticmarkup | A simple lexer used in PyMdown documents to highlight CriticMarkup in a way that stands out in plain text.
 csscolor     | A lexer for CSS colors outside of CSS. Mainly used for the ColorAide project.
 
+### Lexer added by this fork
+
+I have explained the issue this lexer solves at <https://vectorspace.xyz/blog-1/2025/08/05/custom-pygment-lexers>
+
+| Lexers      | Description                                                                                                             |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| dart-critic | A lexer that extends the default Dart lexer by adding `//# #//` syntax which will prevent tokenization of critic markup syntax. |
+
 ## Adding New Lexers
 
 To add a new lexer, the lexer must be dropped into the `pymdown_lexers` folder.  The `__init__.py` file must be updated
