@@ -8,4 +8,4 @@ class DartCriticLexer(DartLexer):
 
     tokens = DartLexer.tokens.copy()
     # Modify the tokens dictionary here
-    tokens['root'].insert(1, (r'//#\s*(.*?)(\n)', bygroups(Text, Whitespace)))
+    tokens['root'].insert(1, (r'//#\s*(.*?)\s*#//', bygroups(Text)))
